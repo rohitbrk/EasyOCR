@@ -5,7 +5,8 @@ def convert_to_text(img):
     results = reader.readtext(img)
     return results
 
-results = convert_to_text("ReactFolderStructure.png")
+img = "ReactFolderStructure.png"
+results = convert_to_text(img)
 
 for item in results:
     print(item[1])
